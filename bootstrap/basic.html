@@ -8,7 +8,7 @@
 	<style type="text/css">
 	/* GLOBAL */
 	* { margin:0;padding:0;font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-	img { max-width: 100%; }
+	/*img { max-width: 100%; }*/
 	.collapse {margin:0;padding:0;}
 	body {-webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; width: 100%!important; height: 100%;}
 	/* ELEMENTS */
@@ -26,6 +26,12 @@
 	/* HEADER */
 	table.head-wrap { width: 100%;}
 	.header.container table td.logo { padding: 15px; }
+	table td#foreground {
+	overflow: hidden;
+	padding-left: 5px; 
+	width: 50%;
+	height: 115px;
+	}
 	.header.container table td.label { padding: 15px; padding-left:0px;}
 	/* BODY */
 	table.body-wrap { width: 100%;}
@@ -57,7 +63,7 @@
 	/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 	.container {display:block!important;max-width:600px!important;margin:0 auto!important; /* makes it centered */clear:both!important;}
 	/* This should also be a block element, so that it will fill 100% of the .container */
-	.content {padding:15px;max-width:600px;margin:0 auto;display:block; }
+	.content {max-width:600px;margin:0 auto;display:block; }
 	/* Let's make sure tables in the content area are 100% wide */
 	.content table { width: 100%; }
 	/* Odds and ends */
@@ -80,15 +86,15 @@
 <body bgcolor="#FFFFFF">
 
 <!-- HEADER -->
-<table class="head-wrap" bgcolor="#999999">
+<table class="head-wrap" bgcolor="#492f24" background="http://www.uwyo.edu/jeremy-test/Email-Templates-master/images/rawhide_background.jpg" background-width="100%">
 	<tr>
-		<td></td>
+		<td id="foreground" align="center"><img src="http://www.uwyo.edu/jeremy-test/Email-Templates-master/images/flag_extended_transparent.png" /></td>
 		<td class="header container" >
 				
 				<div class="content">
-				<table bgcolor="#999999">
+				<table bgcolor="#492f24">
 					<tr>
-						<td><img src="http://www.uwyo.edu/_files/images/e-newsletter/masthead.jpg" /></td>
+						<td align="center"></td>
 					</tr>
 				</table>
 				</div>
