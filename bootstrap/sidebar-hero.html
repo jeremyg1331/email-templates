@@ -26,6 +26,15 @@
 	/* HEADER */
 	table.head-wrap { width: 100%;}
 	.header.container table td.logo { padding: 15px; }
+	table td#foreground {
+	overflow: hidden;
+	padding-left: 5px; 
+	width: 50%;
+	height: 115px;
+	}
+	table td#foreground img{
+	max-width: none;
+	}
 	.header.container table td.label { padding: 15px; padding-left:0px;}
 	/* BODY */
 	table.body-wrap { width: 100%;}
@@ -79,20 +88,11 @@
  
 <body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 
-<table class="head-wrap" bgcolor="#999999">
+<table class="head-wrap" bgcolor="#492f24" background="http://www.uwyo.edu/jeremy-test/Email-Templates-master/images/rawhide_background.jpg" background-width="100%">
 	<tr>
-		<td></td>
-		<td class="header container">
-			
-			<div class="content">
-			<table bgcolor="#999999" class="">
-				<tr>
-					<td><img src="http://placehold.it/200x50" /></td>
-					<td align="right"><h6 class="collapse">Sidebar Hero</h6></td>
-				</tr>
-			</table>
-			</div>
-			
+		<td id="foreground" align="center"><img src="http://www.uwyo.edu/jeremy-test/Email-Templates-master/images/flag_extended_transparent.png" /></td>
+		<td class="header container" >
+				
 		</td>
 		<td></td>
 	</tr>
@@ -112,7 +112,7 @@
 							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 							
 							<!-- A Real Hero (and a real human being) -->
-							<p><img src="http://placehold.it/600x300" /></p><!-- /hero -->
+							<p><img src="http://www.uwyo.edu/jeremy-test/Email-Templates-master/images/prexys600x300.jpg" /></p><!-- /hero -->
 							
 							<!-- Callout Panel -->
 							<p class="callout">
